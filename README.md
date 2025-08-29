@@ -34,25 +34,25 @@ Built with **C#** and **.NET 7+**.
    ```csharp
    var bot = new BotApp();
    ```
-## 2. Setup and Execution
+2. Setup and Execution
 
-### Register Controllers
+3. Register Controllers
 ```csharp
 bot.MapController(new MainController());
 ```
 
-## Register Entities and Configure Database
+4. Register Entities and Configure Database
 ```csharp
 bot.AddEntity<User>();
 bot.UseDatabase(new DatabaseOption { ConnectionString = "...", Provider = "SqlServer" });
 ```
 
-## Run Migrations
+5. Run Migrations
 ```csharp
 bot.Migrate();
 ```
 
-## Start the Bot
+6. Start the Bot
 ```csharp
 await bot.Run();
 ```
