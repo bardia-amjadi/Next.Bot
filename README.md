@@ -98,7 +98,7 @@ await bot.Run();
 
 ---
 
-## 5. Sample Usage
+## 5. Program File
 ```csharp
 var bot = new BotApp();
 bot.MapController(new MainController());
